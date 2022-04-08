@@ -1,0 +1,7 @@
+load("@io_bazel_rules_docker//python:image.bzl", "py_image")
+
+py_image(
+	name = "hello-py",
+	main = "hello.py",
+	srcs = ["hello.py"]
+)
